@@ -18,10 +18,6 @@ namespace FinalProject_Stew_MacF
         public int YearInSchool { get; set; }
     }
 
-    public class GroupSchool
-    {
-       
-    }
 
     public class GroupHobbies
     {
