@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,11 +7,21 @@ using System.Threading.Tasks;
 
 namespace FinalProject_Stew_MacF.Controllers
 {
-    public class HomeController : Controller
+    [ApiController]
+    [Route("[controller]")]
+    public class GroupSchoolController : ControllerBase
     {
-        public IActionResult Index()
+        private readonly ILogger<GroupSchoolController> _logger;
+
+        public GroupSchoolController(ILogger<GroupSchoolController> logger)
         {
-            return View();
+            _logger = logger;
+        }
+
+        [HttpGet]
+        public IEnumerable<GroupSchool> Get()
+        {
+            return null;
         }
     }
 }

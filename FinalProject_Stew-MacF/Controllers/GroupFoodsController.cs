@@ -9,17 +9,17 @@ namespace FinalProject_Stew_MacF.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class GroupHobbiesController : ControllerBase
+    public class GroupFoodsController : ControllerBase
     {
-        private readonly ILogger<GroupHobbiesController> _logger;
+        private readonly ILogger<GroupFoodsController> _logger;
 
-        public GroupHobbiesController(ILogger<GroupHobbiesController> logger)
+        public GroupFoodsController(ILogger<GroupFoodsController> logger)
         {
             _logger = logger;
         }
 
         [HttpGet]
-        public IEnumerable<GroupHobbies> Get()
+        public IEnumerable<GroupFoods> Get()
         {
             return null;
         }

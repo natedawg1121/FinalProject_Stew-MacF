@@ -361,3 +361,5 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/FinalProject_Stew-MacF/WeatherForecast.cs
+/FinalProject_Stew-MacF/Controllers/WeatherForecastController.cs
