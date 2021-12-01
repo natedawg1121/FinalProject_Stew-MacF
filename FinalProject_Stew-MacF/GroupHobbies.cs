@@ -11,7 +11,7 @@ namespace FinalProject_Stew_MacF
 
         public string HobbiesGame { get; set; }
 
-        public string HobbiesInsturment { get; set; }
+        public string HobbiesInstrument { get; set; }
 
         public string HobbiesClub { get; set; }
 

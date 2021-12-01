@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace FinalProject_Stew_MacF
 {
-    public class GroupSchool
+    public class GroupSchools
     {
         public string Name { get; set; }
 
