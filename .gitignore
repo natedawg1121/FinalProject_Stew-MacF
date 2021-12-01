@@ -361,5 +361,8 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Custom lines added
 /FinalProject_Stew-MacF/WeatherForecast.cs
 /FinalProject_Stew-MacF/Controllers/WeatherForecastController.cs
+.vs
