@@ -17,4 +17,42 @@ namespace FinalProject_Stew_MacF
 
         public int YearInSchool { get; set; }
     }
-}
+
+    public class GroupFood
+    {
+        public string Name { get; set; }
+
+        public string FoodBreakfast { get; set; }
+
+        public string FoodLunch { get; set; }
+
+        public string FoodDiner { get; set; }
+
+        public string FoodSnack { get; set; }
+    }
+
+    public class GroupSchool
+    {
+        public string Name { get; set; }
+
+        public string SchoolCollege { get; set; }
+
+        public string SchoolHigh { get; set; }
+
+        public string SchoolMiddle { get; set; }
+
+        public string SchoolElementary { get; set; }
+    }
+
+    public class GroupHobbies
+    {
+        public string Name { get; set; }
+
+        public string HobbiesGame { get; set; }
+
+        public string HobbiesInsturment { get; set; }
+
+        public string HobbiesClub { get; set; }
+
+        public string HobbiesSport { get; set; }
+    }
