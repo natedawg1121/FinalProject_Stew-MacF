@@ -18,19 +18,6 @@ namespace FinalProject_Stew_MacF
         public int YearInSchool { get; set; }
     }
 
-    public class GroupFood
-    {
-        public string Name { get; set; }
-
-        public string FoodBreakfast { get; set; }
-
-        public string FoodLunch { get; set; }
-
-        public string FoodDiner { get; set; }
-
-        public string FoodSnack { get; set; }
-    }
-
     public class GroupSchool
     {
         public string Name { get; set; }
