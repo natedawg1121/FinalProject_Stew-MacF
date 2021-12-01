@@ -7,6 +7,6 @@ namespace FinalProject_Stew_MacF
 {
     public class GroupSchool
     {
-
+        public string Name { get; set; }
     }
 }

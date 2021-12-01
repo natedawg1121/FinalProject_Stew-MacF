@@ -7,6 +7,8 @@ namespace FinalProject_Stew_MacF
 {
     public class GroupInformation
     {
+        public string Name { get; set; }
+
         public DateTime BirthDate { get; set; }
 
         public DateTime BirthTime { get; set; }
