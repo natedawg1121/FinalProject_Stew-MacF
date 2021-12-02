@@ -21,7 +21,15 @@ namespace FinalProject_Stew_MacF.Controllers
         [HttpGet]
         public IEnumerable<GroupInformation> Get()
         {
-            return null;
+            return Enumerable.Range(1, 5).Select(index => new GroupInformation
+            {
+                Name = DateTime.Now.AddDays(index),
+                BirthDate = rng.Next(-20, 55),
+                BirthTime = Summaries[rng.Next(Summaries.Length)],
+                CollegeProgram = ,
+                YearInSchool = 
+            })
+            .ToArray();
         }
     }
 }
