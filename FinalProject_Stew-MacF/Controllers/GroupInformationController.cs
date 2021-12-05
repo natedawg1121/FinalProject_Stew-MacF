@@ -8,28 +8,12 @@ using System.Threading.Tasks;
 namespace FinalProject_Stew_MacF.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
-    public class GroupInformationController : ControllerBase
+    [Route("api/group-information")]
+    public class GroupInformationController : BaseController<GroupInformation>
     {
-        private readonly ILogger<GroupInformationController> _logger;
-
-        public GroupInformationController(ILogger<GroupInformationController> logger)
+        public GroupInformationController(BaseControllerDBContext context) : base(context)
         {
-            _logger = logger;
-        }
 
-        [HttpGet]
-        public IEnumerable<GroupInformation> Get()
-        {
-            return Enumerable.Range(1, 5).Select(index => new GroupInformation
-            {
-                Name = DateTime.Now.AddDays(index),
-                BirthDate = rng.Next(-20, 55),
-                BirthTime = Summaries[rng.Next(Summaries.Length)],
-                CollegeProgram = ,
-                YearInSchool = 
-            })
-            .ToArray();
         }
     }
 }
