@@ -6,9 +6,9 @@ using Microsoft.EntityFrameworkCore;
 
 #nullable disable
 
-namespace FinalProject_Stew_MacF
+namespace FinalProject_Stew_MacF.Models
 {
-    public partial class GroupFood : BaseModel
+    public partial class GroupFood
     {
         public int Id { get; set; }
         public string Name { get; set; }

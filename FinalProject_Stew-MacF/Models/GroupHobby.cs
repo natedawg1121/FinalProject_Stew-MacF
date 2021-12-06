@@ -6,15 +6,15 @@ using Microsoft.EntityFrameworkCore;
 
 #nullable disable
 
-namespace FinalProject_Stew_MacF
+namespace FinalProject_Stew_MacF.Models
 {
-    public partial class GroupSchool : BaseModel
+    public partial class GroupHobby
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public string ElementarySchool { get; set; }
-        public string MiddleSchool { get; set; }
-        public string HighSchool { get; set; }
-        public string University { get; set; }
+        public string FavoriteGame { get; set; }
+        public string PlayedInstrument { get; set; }
+        public string FavoriteClub { get; set; }
+        public string FavoriteSport { get; set; }
     }
 }
