@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using FinalProject_Stew_MacF;
+using System.Linq.Dynamic.Core;
 
 namespace FinalProject_Stew_MacF.Controllers
 {
