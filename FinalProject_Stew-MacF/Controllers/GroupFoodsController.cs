@@ -29,7 +29,7 @@ namespace FinalProject_Stew_MacF.Controllers
 
         // GET: api/GroupFoods/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<GroupFoods>> GetGroupFoods(int id)
+        public async Task<ActionResult<GroupFoods>> GetGroupFoods(int? id)
         {
             var groupFoods = await _context.GroupFoods.FindAsync(id);
 

@@ -25,6 +25,7 @@ namespace FinalProject_Stew_MacF
             services.AddControllers();
             services.AddDbContext<finalProjectContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("FinalProjectDatabase")));
+            services.AddSwaggerDocument();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -47,6 +48,9 @@ namespace FinalProject_Stew_MacF
             {
                 endpoints.MapControllers();
             });
+
+            app.UseOpenApi();
+            app.UseSwaggerUi3();
         }
     }
 }

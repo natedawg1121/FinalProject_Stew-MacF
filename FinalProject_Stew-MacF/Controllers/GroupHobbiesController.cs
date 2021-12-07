@@ -29,7 +29,7 @@ namespace FinalProject_Stew_MacF.Controllers
 
         // GET: api/GroupHobbies/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<GroupHobbies>> GetGroupHobbies(int id)
+        public async Task<ActionResult<GroupHobbies>> GetGroupHobbies(int? id)
         {
             var groupHobbies = await _context.GroupHobbies.FindAsync(id);
 

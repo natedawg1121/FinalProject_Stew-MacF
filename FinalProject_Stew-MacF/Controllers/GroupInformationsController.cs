@@ -30,7 +30,7 @@ namespace FinalProject_Stew_MacF.Controllers
 
         // GET: api/GroupInformations/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<GroupInformation>> GetGroupInformation(int id)
+        public async Task<ActionResult<GroupInformation>> GetGroupInformation(int? id)
         {
             var groupInformation = await _context.GroupInformation.FindAsync(id);
 

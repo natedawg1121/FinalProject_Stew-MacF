@@ -29,7 +29,7 @@ namespace FinalProject_Stew_MacF.Controllers
 
         // GET: api/GroupSchools/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<GroupSchools>> GetGroupSchools(int id)
+        public async Task<ActionResult<GroupSchools>> GetGroupSchools(int? id)
         {
             var groupSchools = await _context.GroupSchools.FindAsync(id);
 
